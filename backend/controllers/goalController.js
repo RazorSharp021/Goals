@@ -27,7 +27,7 @@ const putGoals = (req, res) => {
 // @route   DELETE api/goals/:id
 // @access  Private
 const deleteGoals = (req, res) => {
-  res.json({message: `Update goal ${req.params.id}`})
+  res.json({message: `Delete goal ${req.params.id}`})
 }
 
 module.exports = {
