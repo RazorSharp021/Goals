@@ -2,7 +2,10 @@ const express = require('express')
 // makes a dotenv file with our variables in it 
 const dotenv = require('dotenv').config() 
 const { errorHandler } = require('../backend/middleware/errorMiddleware')
+const connectDb = require('./config/db')
 const port = process.env.PORT || 3000
+
+connectDb()
 
 const app = express()
 
