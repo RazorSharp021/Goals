@@ -1,6 +1,8 @@
 // In order to use mongoose, we need to use asyncHandler, as the database is going to deal with promises 
 const asyncHandler = require('express-async-handler')
 
+const Goal = require('../model/goalModel')
+
 
 // @desc    Get goals
 // @route   GET api/goals
